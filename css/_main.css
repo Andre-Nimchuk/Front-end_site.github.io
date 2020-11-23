@@ -1,0 +1,1428 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: Gilroy-Thin;
+  src: url("../fonts/Gilroy-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: Playfair Display;
+  src: url("../fonts/ofont.ru_Playfair Display.ttf") format("truetype");
+}
+.headerBlock {
+  height: 1000px;
+  width: 100%;
+  background-image: url(../img/electrician-installer-with-tool-his-hands-working-with-cable-construction-site-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.headerBlock__phoneNumber {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 100px;
+}
+.headerBlock__logo {
+  /* LOGO */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 80px;
+  /* identical to box height, or 333% */
+  letter-spacing: 0.07em;
+  color: #FF9900;
+  margin-right: 70px;
+}
+.headerBlock__buttonLink {
+  /* Order Call */
+  margin-left: 50px;
+  border: 2px solid #FF9900;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: transparent;
+  color: #FF9900;
+  height: 30px;
+  width: 125px;
+}
+.headerBlock__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+.headerBlock__linkOfMenu {
+  /* About US */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  /* identical to box height, or 444% */
+  letter-spacing: 0.07em;
+  color: #fff;
+}
+.headerBlock__linkOfMenu:hover {
+  color: #FF9900;
+  border-bottom: 2px solid #FF9900;
+  cursor: pointer;
+}
+.headerBlock__linkOfMenuButton {
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  /* identical to box height, or 444% */
+  letter-spacing: 0.07em;
+  color: #fff;
+}
+.headerBlock__socialLink {
+  margin-left: 20px;
+}
+.headerBlock__headerTitle {
+  width: 830px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  /* or 56px */
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+.headerBlock__headerText {
+  width: 776px;
+  height: 75px;
+  width: 770px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* or 25px */
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-right: 100px;
+  margin-top: 20px;
+}
+.headerBlock__sendOrderButton {
+  /* leave a request */
+  width: 150px;
+  height: 40px;
+  font-family: Gilroy-Thin;
+  background-color: #FF9900;
+  box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: -0.015em;
+  color: #fff;
+  margin-top: 60px;
+}
+.headerBlock__bottomDetails {
+  /* Фіксований кошторис */
+  width: 20%;
+  position: relative;
+  height: 56px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 139.4%;
+  /* or 28px */
+  letter-spacing: 0.2px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerBlock__bottomDetailsText {
+  z-index: 3;
+  position: absolute;
+  right: 50%;
+  padding-right: 20px;
+  left: 0;
+  width: 60%;
+}
+.headerBlock__bottomDetailsImage {
+  z-index: 1;
+  right: 40%;
+  position: absolute;
+}
+.headerBlock__bottomDetailsImageLast {
+  z-index: 1;
+}
+
+.headerBlock-informationWrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.headerBlock-socialNetworks {
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+}
+
+.headerBlock-centralСontent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 140px;
+  margin-top: 150px;
+}
+
+.headerBlock-buttonOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.headerBlock-mainmenu {
+  display: flex;
+  justify-content: center;
+}
+
+.headerBlock-bottomInformation {
+  /* Rectangle 160 */
+  display: flex;
+  align-items: center;
+  margin-top: 243px;
+  width: 100%;
+  height: 169px;
+  left: 0px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(26px);
+          backdrop-filter: blur(26px);
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.headerBlock-phoneBlock {
+  /* Rectangle 148 */
+  height: 54px;
+  width: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.31);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.aboutUs {
+  height: 780px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.aboutUs__photo {
+  width: 45%;
+  height: 100%;
+  position: relative;
+  background: url(../img/charles-deluvio-c2thq3SXJiA-unsplash-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+}
+.aboutUs__yearExperience {
+  position: absolute;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 139.4%;
+  /* identical to box height, or 98px */
+  letter-spacing: 0.2px;
+  color: #fff;
+  margin-left: 50px;
+}
+.aboutUs__textExperience {
+  /* Років досвіду */
+  position: absolute;
+  left: 23.54%;
+  right: 68.61%;
+  top: 35.59%;
+  bottom: 62.61%;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 139.4%;
+  /* or 42px */
+  letter-spacing: 0.2px;
+  color: #FFF;
+}
+.aboutUs__title {
+  /* Про нас */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* identical to box height, or 25px */
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+  z-index: 2;
+}
+.aboutUs__titleQuestions {
+  /* Хто ми такі? */
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  /* identical to box height, or 56px */
+  letter-spacing: 0.2px;
+  color: #000;
+  z-index: 2;
+}
+.aboutUs__subtext {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris augue, id suscipit risus mattis non. Sed a vulputate diam. Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas hendrerit at vel quam. Vestibulum maximus velit dui. */
+  width: 542px;
+  height: 300px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* or 25px */
+  letter-spacing: 0.2px;
+  color: #7C7C7C;
+  z-index: 2;
+  margin-top: 20px;
+}
+.aboutUs__underTextImage {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: -30%;
+}
+
+.aboutUs-positionText {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 30px;
+}
+
+.aboutUs-textBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutUs-experience {
+  /* Rectangle 143 */
+  position: absolute;
+  width: 238px;
+  height: 220px;
+  background: #ffb800;
+  mix-blend-mode: normal;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.aboutUs-textBlock {
+  width: 55%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+  .aboutUs-textBlock {
+    padding: 0 16px;
+  }
+}
+.stagesOfWork {
+  height: 531px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  z-index: 4;
+  /* &__stagesRow {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: 70px;
+      grid-template-areas: 
+        "a a a a c c c c"
+        "b b b b d d d d";
+      align-items: center;
+      align-self: flex-start;
+      z-index: 1;
+  }  */
+}
+.stagesOfWork__title {
+  /* етапи роботи */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* identical to box height, or 25px */
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+}
+.stagesOfWork__subtitle {
+  /* Як ми працюємо? */
+  width: 337px;
+  height: 56px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  /* identical to box height, or 56px */
+  letter-spacing: 0.2px;
+  color: #FFF;
+}
+.stagesOfWork__body {
+  width: 100%;
+  z-index: 5;
+}
+.stagesOfWork__stagesRow {
+  margin: 0 auto;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-self: center;
+  align-items: flex-end;
+  margin-left: 130px;
+}
+.stagesOfWork__stagesColumn {
+  margin-left: 50px;
+  margin-right: 50px;
+  z-index: 5;
+}
+
+.item-stages {
+  width: 100%;
+  height: 100%;
+  margin-top: 100px;
+}
+.item-stages__text {
+  /* Виїзд майстра на обєкт для замірів */
+  width: 155px;
+  height: 40px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 139.4%;
+  /* or 20px */
+  letter-spacing: 0.2px;
+  color: #FFF;
+}
+.item-stages__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-stages__box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: -40px;
+}
+.item-stages__percentFirst {
+  position: relative;
+  width: 65px;
+  height: 150px;
+}
+.item-stages__percentSVGFirst {
+  position: relative;
+  width: 170px;
+  height: 80px;
+  transform: rotate(-45deg);
+}
+.item-stages__percentCircleFirst {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+}
+.item-stages__percentCircleFirst:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #FF9900;
+}
+.item-stages__percentCircleFirst:nth-child(2) {
+  stroke-dashoffset: calc(470 - (470 * 80) / 100);
+  stroke: #fff;
+}
+.item-stages__percentSecond {
+  position: relative;
+  width: 65px;
+  height: 150px;
+}
+.item-stages__percentSVGSecond {
+  position: relative;
+  width: 150px;
+  height: 110px;
+  transform: rotate(-85deg);
+  margin-top: -18px;
+}
+.item-stages__percentCircleSecond {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+}
+.item-stages__percentCircleSecond:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #FF9900;
+}
+.item-stages__percentCircleSecond:nth-child(2) {
+  stroke-dashoffset: calc(450 - (450 * -50) / 100);
+  stroke: #fff;
+}
+.item-stages__percentThird {
+  position: relative;
+  width: 65px;
+  height: 180px;
+}
+.item-stages__percentSVGThird {
+  position: relative;
+  width: 150px;
+  height: 110px;
+  transform: rotate(-85deg);
+  margin-top: 10px;
+}
+.item-stages__percentCircleThird {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+}
+.item-stages__percentCircleThird:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #FF9900;
+}
+.item-stages__percentCircleThird:nth-child(2) {
+  stroke-dashoffset: calc(485 - (485 * -29) / 100);
+  stroke: #fff;
+}
+.item-stages__percentFour {
+  position: relative;
+  width: 65px;
+  height: 180px;
+}
+.item-stages__percentSVGFour {
+  position: relative;
+  width: 150px;
+  height: 110px;
+  transform: rotate(-85deg);
+  margin-top: 10px;
+}
+.item-stages__percentCircleFour {
+  width: 130px;
+  height: 140px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+}
+.item-stages__percentCircleFour:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #FF9900;
+}
+.item-stages__percentCircleFour:nth-child(2) {
+  stroke-dashoffset: calc(380 - (380 * -5) / 100);
+  stroke: #fff;
+}
+.item-stages__percentFive {
+  position: relative;
+  width: 65px;
+  height: 160px;
+}
+.item-stages__percentSVGFive {
+  position: relative;
+  width: 130px;
+  height: 100px;
+  transform: rotate(-85deg);
+  margin-top: 5px;
+}
+.item-stages__percentCircleFive {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 260;
+  stroke-dashoffset: 260;
+}
+.item-stages__percentCircleFive:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #FF9900;
+}
+.item-stages__percentCircleFive:nth-child(2) {
+  stroke-dashoffset: calc(350 - (350 * -5) / 100);
+  stroke: #fff;
+}
+.item-stages__percentSix {
+  position: relative;
+  width: 60px;
+  height: 150px;
+  margin-bottom: -5px;
+}
+.item-stages__percentSVGSix {
+  position: relative;
+  width: 150px;
+  height: 120px;
+  transform: rotate(-45deg);
+}
+.item-stages__percentCircleSix {
+  width: 150px;
+  height: 150px;
+  fill: none;
+  stroke-width: 3;
+  stroke: #000;
+  transform: translate(5px, 5px);
+  stroke-dasharray: 360;
+  stroke-dashoffset: 360;
+}
+.item-stages__percentCircleSix:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #FF9900;
+}
+.item-stages__percentCircleSix:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 10) / 100);
+  stroke: #fff;
+}
+.item-stages__number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+.item-stages__numberInCircleFirst {
+  font-size: 35px;
+  margin-right: 5px;
+}
+.item-stages__numberInCircleSecond {
+  font-size: 35px;
+  margin-left: 10px;
+}
+.item-stages__numberInCircleThird {
+  font-size: 35px;
+  margin-left: 10px;
+  margin-top: 25px;
+}
+.item-stages__numberInCircleFour {
+  margin-top: 25px;
+  margin-left: 5px;
+  font-size: 35px;
+}
+.item-stages__numberInCircleFive {
+  margin-top: 10px;
+  font-size: 35px;
+}
+.item-stages__numberInCircleSix {
+  font-size: 35px;
+  margin-right: 35px;
+  margin-top: -5px;
+}
+.item-stages__textCircleBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  align-items: flex-end;
+  width: 80%;
+  margin-left: 100px;
+  margin-top: -30px;
+}
+.item-stages__textCircle {
+  width: 160px;
+  height: 30px;
+  margin-top: 30px;
+  font-weight: 400;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 139.4%;
+  /* or 20px */
+  letter-spacing: 0.2px;
+  color: #FFF;
+  margin-left: 60px;
+}
+.item-stages__lineMiddle {
+  border-bottom: 2px solid #fff;
+  width: 200px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stagesOfWork-header {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.stagesOfWork-headerPos {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.portfolio {
+  /* height: 780px; */
+  width: 100%;
+}
+.portfolio__content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.portfolio__projectDescription {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-top: -120px;
+}
+.portfolio__title {
+  /* портфоліо */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* identical to box height, or 25px */
+  text-align: center;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+  margin-top: 60px;
+}
+.portfolio__subtitle {
+  /* Наші роботи */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  /* or 56px */
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #000;
+}
+.portfolio__nameProject {
+  /* Назва проекта */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 139.4%;
+  /* or 33px */
+  letter-spacing: 0.2px;
+  color: #000;
+}
+.portfolio__textOfProject {
+  /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. */
+  font-family: Gilroy-Thin;
+  width: 504px;
+  height: 175px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* or 25px */
+  letter-spacing: 0.2px;
+  color: #000;
+  margin-top: 25px;
+  z-index: 1;
+}
+.portfolio__termOfRepair {
+  /* Термін ремонта: */
+  width: 250px;
+  height: 25px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* identical to box height, or 25px */
+  letter-spacing: 0.2px;
+  color: #000;
+  z-index: 2;
+}
+.portfolio__underTextOfProjectImage {
+  position: absolute;
+  /* left: 330px; */
+  right: 35%;
+  bottom: -25%;
+}
+.portfolio__square {
+  /* Площа: */
+  width: 150px;
+  height: 25px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* identical to box height, or 25px */
+  letter-spacing: 0.2px;
+  color: #000;
+  margin-top: 20px;
+  z-index: 2;
+}
+.portfolio__sliderPhoto {
+  /* IMG-519014695cc4d76f64d23f95fcac3dc2-V 1 */
+  /* width: 845px; */
+  width: 100%;
+  height: 608px;
+  background: url(../img/IMG-519014695cc4d76f64d23f95fcac3dc2-V-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}
+.portfolio__sliderSwitch {
+  width: 100%;
+  background: #FFB800;
+  height: 100px;
+}
+.portfolio__picture {
+  position: relative;
+  margin-bottom: 5px;
+  margin-left: -15px;
+}
+@media (max-width: 1389px) {
+  .portfolio .portfolio__nameProject {
+    font-size: 14px;
+  }
+  .portfolio .portfolio__textOfProject {
+    font-size: 14px;
+    width: 300px;
+  }
+  .portfolio .portfolio-termNumberPosition {
+    font-size: 14px;
+  }
+}
+.portfolio__swapEclipse1 {
+  list-style: none;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.portfolio__swapEclipse1:hover {
+  color: #FFFFFF;
+  box-shadow: 0px 0px 4px rgba(255, 153, 0, 0.43);
+}
+.portfolio__arrowPathLeft1 {
+  /* Path */
+  list-style: none;
+  background: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 45px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.portfolio__arrowPathRight1 {
+  list-style: none;
+  background: transparent;
+  border: none;
+  color: #FFF;
+  font-size: 45px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.portfolio__sliderSwitch {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+}
+.portfolio__sliderSwitchEclipse {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+.portfolio__sliderSwitchPath {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  z-index: 2;
+}
+.portfolio__underTextImage {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: -30%;
+}
+
+.portfolio-projectTextBlock {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.portfolio-projectTextPosition {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.portfolio-termSquerNumber {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.portfolio-termNumberPosition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-blockOfPicture {
+  display: flex;
+  width: 55%;
+}
+
+.portfolio-blockOfPicturePos {
+  width: 10%;
+  margin-right: 25px;
+}
+
+.portfolio-sliderBlock {
+  width: 90%;
+}
+
+.portfolio-sliderPosition {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.reviews {
+  /* handyman-uses-jackhammer-for-installation-professional-worker-on-the-construction-site-the-concept-of-electrician-and-handyman 1 */
+  width: 100%;
+  height: 671px;
+  background: url(../img/handyman-uses-jackhammer-for-installation-professional-worker-on-the-construction-site-the-concept-of-electrician-and-handyman-1.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+.reviews__content {
+  width: 766px;
+  height: 671px;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(26px);
+          backdrop-filter: blur(26px);
+  z-index: 4;
+  /* Note: backdrop-filter has minimal browser support */
+  /* Rectangle 161 */
+}
+.reviews__title {
+  /* Відгуки */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 139.4%;
+  /* identical to box height, or 25px */
+  text-align: center;
+  letter-spacing: 9.7px;
+  text-transform: uppercase;
+  color: #FF9900;
+  margin-bottom: 20px;
+  margin-top: 75px;
+}
+.reviews__subtitle {
+  /* Що про нас говорять наші клієнти */
+  width: 450px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 139.4%;
+  /* identical to box height, or 56px */
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #fff;
+}
+.reviews__text {
+  width: 572px;
+  height: 250px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #fff;
+  margin-top: 80px;
+}
+.reviews__subscribe {
+  /* Елена Филонова, Львів */
+  width: 221px;
+  height: 24px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.015em;
+  color: #fff;
+  margin-top: -110px;
+}
+.reviews__arrowPathLeft {
+  list-style: none;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 45px;
+  font-weight: 600;
+}
+.reviews__arrowPathLeft:hover {
+  color: #FF9900;
+}
+.reviews__arrowPathRight {
+  list-style: none;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.63);
+  font-size: 45px;
+  font-weight: 600;
+}
+.reviews__arrowPathRight:hover {
+  color: #FF9900;
+}
+.reviews__swapEclipse {
+  list-style: none;
+  background: transparent;
+  border: none;
+  color: rgba(196, 196, 196, 0.45);
+  font-size: 25px;
+  font-weight: 600;
+}
+.reviews__swapEclipse:hover {
+  color: #FF9900;
+}
+
+.reviews-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.reviews-reviewsComment {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+.reviews-SliderButton {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 115px;
+  margin-left: 220px;
+}
+
+.toContact {
+  /* Style toContact Block */
+  height: 403px;
+  width: 100%;
+  background-color: #FFB800;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.toContact__wraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.toContact__title {
+  /* Зв'яжіться з нами */
+  width: 266px;
+  height: 40px;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 40px;
+  /* identical to box height */
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.toContact__subtitle {
+  /* Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин. */
+  width: 610px;
+  height: 21px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+  letter-spacing: 0.005em;
+  color: #fff;
+  margin-bottom: 35px;
+}
+.toContact__inputName {
+  color: rgba(255, 255, 255, 0.72);
+  border: none;
+  outline: none;
+  background-color: #FFB800;
+  width: 304px;
+  border-bottom: 0.5px solid #FFFFFF;
+}
+.toContact__inputName::-webkit-input-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputName:-moz-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputName::-moz-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputName:-ms-input-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputEmail {
+  color: rgba(255, 255, 255, 0.72);
+  border: none;
+  outline: none;
+  background-color: #FFB800;
+  width: 304px;
+  border-bottom: 0.5px solid #FFFFFF;
+}
+.toContact__inputEmail::-webkit-input-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputEmail:-moz-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputEmail::-moz-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputEmail:-ms-input-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputMessage {
+  color: rgba(255, 255, 255, 0.72);
+  border: none;
+  outline: none;
+  background-color: #FFB800;
+  width: 705px;
+  border-bottom: 0.5px solid #FFFFFF;
+}
+.toContact__inputMessage::-webkit-input-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputMessage:-moz-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputMessage::-moz-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__inputMessage:-ms-input-placeholder {
+  font-family: Gilroy-Thin;
+  color: rgba(255, 255, 255, 0.72);
+}
+.toContact__sendButton {
+  width: 128px;
+  height: 38px;
+  background: #FFFFFF;
+  /* Надіслати */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFB800;
+}
+
+.toContact-contactHeader {
+  margin-right: 100px;
+}
+
+.toContact-inputBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toContact-messageBlock {
+  margin-top: 40px;
+}
+
+.toContact-contactHeader {
+  margin-top: 40px;
+}
+
+.toContact-buttonSend {
+  margin-top: 50px;
+}
+
+/* Style toContact End-Block */
+.companyDetails {
+  /* Style Footer Block */
+  height: 403px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.companyDetails__logo {
+  color: #FF9900;
+  /* LOGO */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 80px;
+  /* identical to box height, or 333% */
+  letter-spacing: 0.07em;
+}
+.companyDetails__description {
+  color: #fff;
+  /* Is your home small b */
+  width: 250px;
+  height: 75px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: -0.7px;
+  /* Is your home small b */
+}
+.companyDetails__link {
+  color: #fff;
+  /* Портфоліо */
+  width: 95px;
+  height: 19px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 23px;
+  /* identical to box height */
+}
+.companyDetails__location {
+  font-family: Gilroy-Thin;
+  color: #fff;
+  margin-top: 20px;
+}
+.companyDetails__phone {
+  color: #fff;
+  /* (097)857-70-47 */
+  width: 110px;
+  height: 19px;
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 50px;
+}
+.companyDetails__media {
+  margin-top: 20px;
+}
+.companyDetails__country {
+  font-weight: 700;
+}
+
+.companyDetails-mainInfo {
+  margin-left: 164px;
+}
+
+.companyDetails-socialMedia {
+  margin-right: 120px;
+}
+
+.footerContent__copyright {
+  background-color: black;
+}
+
+.footerContent__copyrightLine {
+  /* Line 34 */
+  position: absolute;
+  left: 0.1%;
+  right: 0%;
+  margin-top: -14px;
+  border: 0.5px solid rgba(255, 255, 255, 0.29);
+}
+
+.footerContent__copyrightText {
+  /* 2020 © Come Back Agency. All Rights Reserved. */
+  font-family: Gilroy-Thin;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.005em;
+  color: rgba(255, 255, 255, 0.29);
+  margin-left: 162px;
+  margin-top: -35px;
+}
+
+/*End Style Footer block*/

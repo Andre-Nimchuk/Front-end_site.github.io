@@ -1,0 +1,1450 @@
+@import "nullstyle.scss";
+@import "font.scss";
+
+$ConWid: 100%;
+$colText_1: #fff;
+$colText_2: #FF9900;
+$colText_3: #FFB800;
+$colText_4: #000;
+$default-font: Gilroy-Thin;
+$default-secondFont: Playfair Display;
+
+@mixin placeholder () {
+    &::-webkit-input-placeholder { @content; }
+    &:-moz-placeholder           { @content; }
+    &::-moz-placeholder          { @content; }
+    &:-ms-input-placeholder      { @content; }  
+  }
+
+.headerBlock {
+    height: 1000px;
+    width: $ConWid;
+    background-image: url(../img/electrician-installer-with-tool-his-hands-working-with-cable-construction-site-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    &__phoneNumber {
+        color: $colText_1;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-right: 100px;
+    }
+
+    &__logo {
+        /* LOGO */
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 80px;
+    /* identical to box height, or 333% */
+    letter-spacing: 0.07em;
+    color: $colText_2;
+    margin-right: 70px;
+    }
+
+    &__buttonLink {
+        /* Order Call */
+        margin-left: 50px;
+        border: 2px solid $colText_2;
+        box-sizing: border-box;
+        font-weight: bold;
+        background-color: transparent;
+        color: $colText_2;
+        height: 30px;
+        width: 125px;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 85%;
+    }
+
+    &__linkOfMenu {
+        /* About US */
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    /* identical to box height, or 444% */
+    letter-spacing: 0.07em;
+    color: $colText_1;
+
+    &:hover {
+        color: $colText_2;
+        border-bottom: 2px solid  $colText_2;
+        cursor: pointer;
+      }
+
+    }
+
+    &__linkOfMenuButton {
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 40px;
+        /* identical to box height, or 444% */
+        letter-spacing: 0.07em;
+        color: $colText_1;
+    }
+
+    &__socialLink{
+        margin-left: 20px;
+    }
+
+    &__headerTitle {
+        width: 830px;
+        font-family: $default-secondFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 139.4%;
+        /* or 56px */
+        letter-spacing: 0.2px;
+        color: $colText_1;
+    }
+
+    &__headerText {
+        width: 776px;
+        height: 75px;
+        width: 770px;
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 139.4%;
+        /* or 25px */
+        letter-spacing: 0.2px;
+        color: $colText_1;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+
+    &__sendOrderButton {
+        /* leave a request */
+        width: 150px;
+        height: 40px;
+        font-family: $default-font;
+        background-color: $colText_2;
+        box-shadow: 1px 1px 18px 4px rgba(255, 153, 0, 0.32);
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: -0.015em;
+        color: $colText_1;
+        margin-top: 60px;
+    }
+
+    &__bottomDetails {
+        /* Фіксований кошторис */
+    width: 20%;
+    position: relative;
+    height: 56px;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 139.4%;
+    /* or 28px */
+    letter-spacing: 0.2px;
+    color: $colText_1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    &__bottomDetailsText {
+        z-index: 3;
+        position: absolute;
+        right: 50%;
+        padding-right: 20px;
+        left: 0;
+        width: 60%; 
+       }
+
+    &__bottomDetailsImage { 
+        z-index: 1;
+        right: 40%;
+        position: absolute;
+    }
+
+    &__bottomDetailsImageLast {
+        z-index: 1;
+    }
+}
+
+.headerBlock-informationWrapper {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.headerBlock-socialNetworks {
+    display: flex;
+    flex-direction: row;
+    margin-right: 70px;
+}
+
+.headerBlock-centralСontent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 140px;
+    margin-top: 150px;
+}
+
+.headerBlock-buttonOrder {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.headerBlock-mainmenu {
+    display: flex;
+    justify-content: center;
+}
+
+.headerBlock-bottomInformation {
+    /* Rectangle 160 */
+    display: flex;
+    align-items: center;
+    margin-top: 243px;
+    width: 100%;
+    height: 169px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(26px);
+    /* Note: backdrop-filter has minimal browser support */
+
+}
+
+.headerBlock-phoneBlock {
+    /* Rectangle 148 */
+    height: 54px;
+    width: $ConWid;
+    left: 0px;
+    top: 0px;
+    background: rgba(0, 0, 0, 0.31);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.aboutUs {
+    height: 780px;
+    width: $ConWid;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    &__photo {
+        width: 45%;
+        height: 100%;
+        position: relative;
+        background: url(../img/charles-deluvio-c2thq3SXJiA-unsplash-1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 5;
+    }
+
+    &__yearExperience {
+    position: absolute;
+    font-family: $default-secondFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 139.4%;
+    /* identical to box height, or 98px */
+    letter-spacing: 0.2px;
+    color: $colText_1;
+    margin-left: 50px;
+    }
+
+    &__textExperience {
+        /* Років досвіду */
+    position: absolute;
+    left: 23.54%;
+    right: 68.61%;
+    top: 35.59%;
+    bottom: 62.61%;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 139.4%;
+    /* or 42px */
+    letter-spacing: 0.2px;
+    color: #FFF;
+    }
+
+    &__title {
+        /* Про нас */
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* identical to box height, or 25px */
+    letter-spacing: 9.7px;
+    text-transform: uppercase;
+    color: $colText_2;
+    z-index: 2;
+    }
+    &__titleQuestions{
+        /* Хто ми такі? */
+    font-family: $default-secondFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 139.4%;
+    /* identical to box height, or 56px */
+    letter-spacing: 0.2px;
+    color: $colText_4;
+    z-index: 2;
+    }
+
+    &__subtext{
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. Proin consequat mauris augue, id suscipit risus mattis non. Sed a vulputate diam. Mauris eget urna quis nisl lacinia convallis. Mauris ut urna sed sem egestas hendrerit at vel quam. Vestibulum maximus velit dui. */
+    width: 542px;
+    height: 300px;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* or 25px */
+    letter-spacing: 0.2px;
+    color: #7C7C7C;
+    z-index: 2;
+    margin-top: 20px;
+    }
+
+    &__underTextImage{
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: -30%;
+    }
+}
+
+.aboutUs-positionText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+.aboutUs-textBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.aboutUs-experience {
+    /* Rectangle 143 */
+    position: absolute;
+    width: 238px;
+    height: 220px;
+    background: rgba(255,184,0,1);
+    mix-blend-mode: normal;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.aboutUs-textBlock {
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1024px) {
+    .aboutUs-textBlock {
+      padding: 0 16px;
+    }
+}
+
+.stagesOfWork {
+    height: 531px;
+    width: $ConWid;
+    background-color: $colText_4;
+    position: relative;
+    z-index: 4;
+    
+    &__title {
+        /* етапи роботи */
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* identical to box height, or 25px */
+    letter-spacing: 9.7px;
+    text-transform: uppercase;
+    color: $colText_2;
+    }
+
+    &__subtitle {
+        /* Як ми працюємо? */
+    width: 337px;
+    height: 56px;
+    font-family: $default-secondFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 139.4%;
+    /* identical to box height, or 56px */
+    letter-spacing: 0.2px;
+    color: #FFF;
+    }
+
+    &__body {
+        width: 100%;
+        z-index: 5;
+    }
+
+    &__stagesRow {
+        margin: 0 auto;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: center;
+        align-items: flex-end;
+        margin-left: 130px;
+    }
+
+     /* &__stagesRow {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: 70px;
+        grid-template-areas: 
+          "a a a a c c c c"
+          "b b b b d d d d";
+        align-items: center;
+        align-self: flex-start;
+        z-index: 1;
+    }  */
+    &__stagesColumn {
+        margin-left: 50px;
+        margin-right: 50px;
+        z-index: 5;
+    }
+}
+
+.item-stages {
+    width: $ConWid;
+    height: 100%;
+    margin-top: 100px;
+    &__text {
+        /* Виїзд майстра на обєкт для замірів */
+    width: 155px;
+    height: 40px;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 139.4%;
+    /* or 20px */
+    letter-spacing: 0.2px;
+    color: #FFF;
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: -40px;
+    }
+
+    &__percentFirst {
+        position: relative;
+        width: 65px;
+        height: 150px;
+    }
+
+    &__percentSVGFirst {
+        position: relative;
+        width: 170px;
+        height: 80px;
+        transform: rotate(-45deg);
+    }
+
+    &__percentCircleFirst {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 3;
+        stroke: $colText_4;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;  
+    }
+
+    &__percentCircleFirst {
+        &:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: $colText_2;
+        }
+        &:nth-child(2) {
+            stroke-dashoffset: calc(470 - (470 * 80) / 100);
+            stroke: #fff;
+        }
+    }
+
+    &__percentSecond {
+        position: relative;
+        width: 65px;
+        height: 150px;
+    }
+
+    &__percentSVGSecond {
+        position: relative;
+        width: 150px;
+        height: 110px;
+        transform: rotate(-85deg);
+        margin-top: -18px;
+    }
+
+    &__percentCircleSecond {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 3;
+        stroke: $colText_4;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 360;
+        stroke-dashoffset: 360;  
+    }
+
+    &__percentCircleSecond {
+        &:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: $colText_2;
+        }
+        &:nth-child(2) {
+            stroke-dashoffset: calc(450 - (450 * -50) / 100);
+            stroke: #fff;
+        }
+    }
+
+    &__percentThird {
+        position: relative;
+        width: 65px;
+        height: 180px;
+    }
+
+    &__percentSVGThird {
+        position: relative;
+        width: 150px;
+        height: 110px;
+        transform: rotate(-85deg);
+        margin-top: 10px;
+    }
+
+    &__percentCircleThird {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 3;
+        stroke: $colText_4;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 360;
+        stroke-dashoffset: 360;  
+    }
+
+    &__percentCircleThird {
+        &:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: $colText_2;
+        }
+        &:nth-child(2) {
+            stroke-dashoffset: calc(485 - (485 * -29) / 100);
+            stroke: #fff;
+        }
+    }
+
+    &__percentFour {
+        position: relative;
+        width: 65px;
+        height: 180px;
+    }
+
+    &__percentSVGFour {
+        position: relative;
+        width: 150px;
+        height: 110px;
+        transform: rotate(-85deg);
+        margin-top: 10px;
+    }
+
+    &__percentCircleFour {
+        width: 130px;
+        height: 140px;
+        fill: none;
+        stroke-width: 3;
+        stroke: $colText_4;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;  
+    }
+
+    &__percentCircleFour {
+        &:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: $colText_2;
+        }
+        &:nth-child(2) {
+            stroke-dashoffset: calc(380 - (380 * -5) / 100);
+            stroke: #fff;
+        }
+    }
+
+    &__percentFive {
+        position: relative;
+        width: 65px;
+        height: 160px;
+    }
+
+    &__percentSVGFive {
+        position: relative;
+        width: 130px;
+        height: 100px;
+        transform: rotate(-85deg);
+        margin-top: 5px;
+    }
+
+    &__percentCircleFive {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 3;
+        stroke: $colText_4;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 260;
+        stroke-dashoffset: 260;  
+    }
+
+    &__percentCircleFive {
+        &:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: $colText_2;
+        }
+        &:nth-child(2) {
+            stroke-dashoffset: calc(350 - (350 * -5) / 100);
+            stroke: #fff;
+        }
+    }
+
+    &__percentSix {
+        position: relative;
+        width: 60px;
+        height: 150px;
+        margin-bottom: -5px;
+    }
+
+    &__percentSVGSix {
+        position: relative;
+        width: 150px;
+        height: 120px;
+        transform: rotate(-45deg);
+    }
+
+    &__percentCircleSix {
+        width: 150px;
+        height: 150px;
+        fill: none;
+        stroke-width: 3;
+        stroke: $colText_4;
+        transform: translate(5px, 5px);
+        stroke-dasharray: 360;
+        stroke-dashoffset: 360;  
+    }
+
+    &__percentCircleSix {
+        &:nth-child(1) {
+            stroke-dashoffset: 0;
+            stroke: $colText_2;
+        }
+        &:nth-child(2) {
+            stroke-dashoffset: calc(440 - (440 * 10) / 100);
+            stroke: #fff;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 150%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #999;
+    }
+
+    &__numberInCircleFirst {
+        font-size: 35px;
+        margin-right: 5px;
+    }
+
+    &__numberInCircleSecond {
+        font-size: 35px;
+        margin-left: 10px;
+    }
+
+    &__numberInCircleThird {
+        font-size: 35px;
+        margin-left: 10px;
+        margin-top: 25px;
+    }
+
+    &__numberInCircleFour {
+        margin-top: 25px;
+        margin-left: 5px;
+        font-size: 35px;
+    }
+
+    &__numberInCircleFive {
+        margin-top: 10px;
+        font-size: 35px;
+    }
+
+    &__numberInCircleSix {
+        font-size: 35px;
+        margin-right: 35px;
+        margin-top: -5px;
+    }
+
+    &__textCircleBlock {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        align-items: flex-end;
+        width: 80%;
+        margin-left: 100px;
+        margin-top: -30px;
+    }
+
+    &__textCircle {
+        width: 160px;
+        height: 30px;
+        margin-top: 30px;
+        font-weight: 400;
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 139.4%;
+        /* or 20px */
+        letter-spacing: 0.2px;
+        color: #FFF;
+        margin-left: 60px;
+    }
+
+      
+    &__lineMiddle {
+        border-bottom: 2px solid #fff;
+        width: 200px;
+        margin-bottom: 80px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.stagesOfWork-header {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.stagesOfWork-headerPos {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+
+.portfolio {
+    /* height: 780px; */
+    width: $ConWid;
+
+    &__content {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    &__projectDescription {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        margin-top: -120px;
+    }
+
+    &__title {
+        /* портфоліо */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* identical to box height, or 25px */
+    text-align: center;
+    letter-spacing: 9.7px;
+    text-transform: uppercase;
+    color: $colText_2;
+    margin-top: 60px;
+    }
+
+    &__subtitle{
+        /* Наші роботи */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $default-secondFont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 139.4%;
+    /* or 56px */
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $colText_4;
+    }
+
+    &__nameProject {
+        /* Назва проекта */
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 139.4%;
+    /* or 33px */
+    letter-spacing: 0.2px;
+    color: $colText_4;
+    }
+
+    &__textOfProject {
+        /* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum eros arcu, at aliquet tortor vestibulum ut. Quisque sed libero nec nulla pulvinar pharetra. Aliquam porttitor justo lorem, at rhoncus nulla condimentum vitae. Cras vitae aliquet quam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus id quam nulla. */
+    font-family: $default-font;
+    width: 504px;
+    height: 175px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* or 25px */
+    letter-spacing: 0.2px;
+    color: $colText_4;
+    margin-top: 25px;
+    z-index: 1;
+    }
+
+    &__termOfRepair {
+        /* Термін ремонта: */
+    width: 250px;
+    height: 25px;
+    font-family: $default-font;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* identical to box height, or 25px */
+    letter-spacing: 0.2px;
+    color: $colText_4;
+    z-index: 2;
+    }
+    
+    &__underTextOfProjectImage{
+        position: absolute;
+        /* left: 330px; */
+        right: 35%;
+        bottom: -25%;
+    }
+    
+    &__square {
+        /* Площа: */
+    width: 150px;
+    height: 25px;
+    font-family: $default-font;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 139.4%;
+    /* identical to box height, or 25px */
+    letter-spacing: 0.2px;
+    color: $colText_4;
+    margin-top: 20px;
+    z-index: 2;
+    }
+
+    &__sliderPhoto {
+        /* IMG-519014695cc4d76f64d23f95fcac3dc2-V 1 */
+    /* width: 845px; */
+    width: 100%;
+    height: 608px;
+    background: url(../img/IMG-519014695cc4d76f64d23f95fcac3dc2-V-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 2;
+    }
+
+    &__sliderSwitch {
+        width: 100%;
+        background: $colText_3;
+        height: 100px;
+    }
+
+    &__picture {
+        position: relative;
+        margin-bottom: 5px;
+        margin-left: -15px;
+    }
+
+    @media (max-width: 1389px) {
+        .portfolio__nameProject {
+          font-size: 14px;
+        }
+
+        .portfolio__textOfProject {
+            font-size: 14px;
+            width: 300px;
+          }
+        .portfolio-termNumberPosition {
+            font-size: 14px;
+        }
+    }
+
+    &__swapEclipse1 {
+        list-style: none;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.45);;
+        font-size: 25px;
+        font-weight: 600;
+        cursor: pointer;
+        &:hover {
+            color: #FFFFFF;
+            box-shadow: 0px 0px 4px rgba(255, 153, 0, 0.43);
+          }
+    }
+
+    &__arrowPathLeft1 {
+        /* Path */
+        list-style: none;
+        background: transparent;
+        border: none;
+        color: #FFF;
+        font-size: 45px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    &__arrowPathRight1 {
+        list-style: none;
+        background: transparent;
+        border: none;
+        color: #FFF;
+        font-size: 45px;
+        font-weight: 600;
+        cursor: pointer;
+        }
+
+        &__sliderSwitch {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            z-index: 2;
+        }
+
+
+        &__sliderSwitchEclipse {
+            display: flex;
+            width: 100px;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            z-index: 2;
+        }
+
+        &__sliderSwitchPath {
+            display: flex;
+            width: 100px;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            z-index: 2;
+        }
+
+        &__underTextImage{
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: -30%;
+        }
+}
+
+.portfolio-projectTextBlock {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.portfolio-projectTextPosition {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.portfolio-termSquerNumber {
+    width: 50%;
+    display: flex; 
+    flex-direction: column;  
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.portfolio-termNumberPosition {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-blockOfPicture {
+   display: flex;
+   width: 55%;
+}
+
+.portfolio-blockOfPicturePos {
+   width: 10%;  
+   margin-right: 25px;
+}
+
+.portfolio-sliderBlock {
+    width: 90%;
+}
+
+.portfolio-sliderPosition {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+.reviews {
+    /* handyman-uses-jackhammer-for-installation-professional-worker-on-the-construction-site-the-concept-of-electrician-and-handyman 1 */
+    width: 100%;
+    height: 671px;
+    background:  url(../img/handyman-uses-jackhammer-for-installation-professional-worker-on-the-construction-site-the-concept-of-electrician-and-handyman-1.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    &__content {
+        width: 766px;
+        height: 671px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(26px);
+        z-index: 4;
+        /* Note: backdrop-filter has minimal browser support */
+        /* Rectangle 161 */
+    }
+
+    &__title {
+        /* Відгуки */
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 139.4%;
+        /* identical to box height, or 25px */
+        text-align: center;
+        letter-spacing: 9.7px;
+        text-transform: uppercase;
+        color: $colText_2;
+        margin-bottom: 20px;
+        margin-top: 75px;
+    }
+
+    &__subtitle {
+        /* Що про нас говорять наші клієнти */
+        width: 450px;
+        font-family: $default-secondFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 139.4%;
+        /* identical to box height, or 56px */
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: $colText_1;
+    }
+
+    &__text {
+        width: 572px;
+        height: 250px;
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.01em;
+        color: $colText_1;
+        margin-top: 80px;
+    }
+
+    &__subscribe {
+        /* Елена Филонова, Львів */
+        width: 221px;
+        height: 24px;
+        font-family: $default-font;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: -0.015em;
+        color: $colText_1;
+        margin-top: -110px;
+    }
+
+    &__arrowPathLeft {
+        list-style: none;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 45px;
+        font-weight: 600;
+        &:hover {
+            color: $colText_2;
+          }
+    }
+    
+    &__arrowPathRight {
+        list-style: none;
+        background: transparent;
+        border: none;
+        color: rgba(255, 255, 255, 0.63);
+        font-size: 45px;
+        font-weight: 600;
+        &:hover {
+            color: $colText_2;
+          }
+    }
+    
+
+    &__swapEclipse {
+        list-style: none;
+        background: transparent;
+        border: none;
+        color: rgba(196, 196, 196, 0.45);
+        font-size: 25px;
+        font-weight: 600;
+        &:hover {
+            color: $colText_2;
+          }
+    }
+    
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+}
+
+.reviews-reviewsComment {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews-SliderButton {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 115px;
+    margin-left: 220px;
+}
+
+.toContact { /* Style toContact Block */
+    height: 403px;
+    width: $ConWid;
+    background-color: #FFB800;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+        &__wraper{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &__title {
+                /* Зв'яжіться з нами */
+            width: 266px;
+            height: 40px;
+            font-family: $default-secondFont;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 40px;
+            /* identical to box height */
+            color: $colText_1;
+            display: flex;
+            align-items: center;
+        }
+
+        &__subtitle {
+            /* Залиште номер телефону, і ми зв'яжемося з вами на протязі 5 хвилин. */
+            width: 610px;
+            height: 21px;
+            font-family: $default-font;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 18px;
+            line-height: 21px;
+            /* identical to box height */
+            letter-spacing: 0.005em;
+            color: $colText_1;
+            margin-bottom: 35px;
+            
+        }
+
+        &__inputName {
+            color: rgba(255, 255, 255, 0.72);
+            border: none; 
+            outline: none; 
+            background-color: $colText_3;
+            width: 304px;
+            border-bottom: 0.5px solid #FFFFFF;
+
+            @include placeholder {
+                font-family: $default-font;
+                color: rgba(255, 255, 255, 0.72);
+              }
+        }
+
+        &__inputEmail {
+            color: rgba(255, 255, 255, 0.72);
+            border: none; 
+            outline: none; 
+            background-color: $colText_3;
+            width: 304px;
+            border-bottom: 0.5px solid #FFFFFF;
+
+            @include placeholder {
+                font-family: $default-font;
+                color: rgba(255, 255, 255, 0.72);
+              }
+        }
+
+        &__inputMessage {
+            color: rgba(255, 255, 255, 0.72);
+            border: none; 
+            outline: none; 
+            background-color: $colText_3;
+            width: 705px;
+            border-bottom: 0.5px solid #FFFFFF;
+
+            @include placeholder {
+                font-family: $default-font;
+                color: rgba(255, 255, 255, 0.72);
+              }
+        }
+
+        &__sendButton {
+            width: 128px;
+            height: 38px;
+            background: #FFFFFF;
+            /* Надіслати */
+            font-family: $default-font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            color: $colText_3;
+        }
+}
+
+.toContact-contactHeader {
+    margin-right: 100px;
+}
+
+.toContact-inputBlock {
+    display: flex;
+    justify-content: space-between;
+}
+.toContact-messageBlock {
+    margin-top: 40px;
+}
+
+.toContact-contactHeader {
+    margin-top: 40px;
+}
+
+.toContact-buttonSend {
+    margin-top: 50px;
+} /* Style toContact End-Block */
+
+
+.companyDetails { /* Style Footer Block */
+    height: 403px;
+    width: $ConWid;
+    background-color: $colText_4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        &__logo {
+            color: $colText_2;
+            /* LOGO */
+            font-family: $default-font;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 80px;
+            /* identical to box height, or 333% */
+            letter-spacing: 0.07em;
+            
+        }
+
+        &__description {
+            color: $colText_1;
+            /* Is your home small b */
+            width: 250px;
+            height: 75px;
+            font-family: $default-font;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: -0.7px;
+            /* Is your home small b */
+
+        }
+
+        &__link {
+            color: $colText_1;
+            /* Портфоліо */
+            width: 95px;
+            height: 19px;
+            font-family: $default-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            margin-top: 23px;
+            /* identical to box height */
+        }
+
+        &__location {
+            font-family: $default-font;
+            color: $colText_1;
+            margin-top: 20px;
+        }
+
+        &__phone {
+            color: $colText_1;
+            /* (097)857-70-47 */
+            width: 110px;
+            height: 19px;
+            font-family: $default-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            margin-top: 50px;
+        }
+
+        &__media {
+            margin-top: 20px;
+        }
+
+        &__country {
+            font-weight: 700;
+        }
+}
+.companyDetails-mainInfo {
+    margin-left: 164px;
+    
+}
+.companyDetails-socialMedia {
+    margin-right: 120px;
+}
+.footerContent__copyright{
+    background-color: black;
+}
+.footerContent__copyrightLine {
+    /* Line 34 */
+
+    position: absolute;
+    left: 0.10%;
+    right: -0%;
+    margin-top: -14px;
+    border: 0.5px solid rgba(255, 255, 255, 0.29);
+
+}
+.footerContent__copyrightText {
+    /* 2020 © Come Back Agency. All Rights Reserved. */
+    font-family: $default-font;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.005em;
+    color: rgba(255, 255, 255, 0.29);
+    margin-left: 162px;
+    margin-top: -35px;
+} 
+/*End Style Footer block*/
